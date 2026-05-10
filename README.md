@@ -47,27 +47,32 @@ This will create the necessary folders (bin, obj, tmp) and generate the controll
 Running the System
 Start the Controller:
 
-Bash
+```Bash
 ./bin/controller <parallel-commands> <sched-policy>
 parallel-commands: Max simultaneous tasks.
+```
 
 sched-policy: 0 for FCFS, 1 for Round-Robin.
 
 Execute a Command:
 
-Bash
+```Bash
 ./bin/runner -e <user-id> "command | with | pipeline > out.txt"
+```
 Check Status:
 
-Bash
+```Bash
 ./bin/runner -c
+```
 Shutdown Server:
 
-Bash
+```Bash
 ./bin/runner -s
+```
 📊 Testing
 A complete stress test script is included. To run the automated battery of tests:
 
-Bash
+```Bash
 chmod +x teste_stress.sh
 ./teste_stress.sh
+```
